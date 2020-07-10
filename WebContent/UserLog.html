@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript">
+function validate(){
+	var aid= document.frm.aid.value;
+	var apass=document.frm.apass.value;
+	if(Cid==""){
+		alert("Please Enter Id");
+		return false;
+	}else if(Cpass=""){
+		alert("Please Enter Password")
+		return false;
+	}
+}
+</script>
+<body>
+<form name="frm" action="UserLogin" onsubmit="return validate()">
+<table border="1" align="center">
+<tr>
+<th colspan="2">User Login</th>
+</tr>
+<tr>
+<th colspan=2><img src=" background_img.jpg" width="200" height="200"></th>
+</tr>
+<tr>
+<td>Enter User ID:</td><td><input type="text" name="Cid"></td>
+</tr>
+<tr>
+<td>Enter password:</td><td><input type="password" name="Cpass"></td>
+</tr>
+<tr>
+<th colspan="2"><input type="submit" value="Login"></th>
+
+
+</tr>
+</table>
+</form>
+</body>
+</html>
